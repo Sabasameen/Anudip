@@ -1,0 +1,197 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "8cda92c0-52b5-44fb-a770-bebc3d809b55",
+   "metadata": {},
+   "source": [
+    "### 1. Python program to check leap year \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "f24933f2-0214-41db-a92b-69cda925ad7e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter valid year: 2028\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2028 is a leap year\n"
+     ]
+    }
+   ],
+   "source": [
+    "y = int(input(\"Enter a four digit valid year:\"))\n",
+    "\n",
+    "if((y % 400 == 0) or\n",
+    "     (y % 100 != 0) and\n",
+    "     (y % 4 == 0)):\n",
+    "    print(y,\"is a leap year\")\n",
+    "else:\n",
+    "     print(y,\"is not a leap year\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "16d67220-604c-4380-9d57-aaebf860d5d5",
+   "metadata": {},
+   "source": [
+    "### 2. Python Program to Find the Largest Among Three Numbers \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "3a566bad-4e82-4c9f-bf66-034a950b3f91",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number: 2\n",
+      "Enter the second number: 5\n",
+      "Enter the third number: 8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "largest number 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "A = int(input(\"Enter the first number:\"))\n",
+    "B = int(input(\"Enter the second number:\"))\n",
+    "C = int(input(\"Enter the third number:\"))\n",
+    "if A > B and A > C: \n",
+    "    print('largest number' ,A)\n",
+    "elif B > C and B > A:\n",
+    "    print('largest number' ,B)\n",
+    "else:\n",
+    "    print('largest number',C)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2a343bb4-e890-4a41-a547-1430be67bbcd",
+   "metadata": {},
+   "source": [
+    "### 3. Python Program to Check if a Number is Positive, Negative or 0 \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "9a94991c-80a1-4384-9417-94784e45ca36",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: -9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Negative number\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Enter a number:\"))\n",
+    "if num > 0:\n",
+    "    print(\"positive number\")\n",
+    "elif num == 0:\n",
+    "    print(\"zero\")\n",
+    "else:\n",
+    "    print(\"Negative number\") \n",
+    "          "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f60d32a2-c6b8-4f94-8800-cac427bada59",
+   "metadata": {},
+   "source": [
+    "### 4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders of more than Rs. 100 for key-based toys, a discount of 5% is given, and a discount of 10% is given on orders for electrical charging based toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3 are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount. \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "8dc7a641-ab0e-4063-b4b8-86d3285ffce7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the product code number1:  1\n",
+      "Enter the product code number2:  2\n",
+      "Enter the product code number3:  3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Net amount to be paid: Rs. 1080\n"
+     ]
+    }
+   ],
+   "source": [
+    "Code = 1/2/3\n",
+    "\n",
+    "PC = int(input(\"Enter the product code number1: \"))\n",
+    "PC = int(input(\"Enter the product code number2: \"))\n",
+    "PC = int(input(\"Enter the product code number3: \"))\n",
+    "\n",
+    "print(\"Net amount to be paid: Rs.\", round(1080, 2))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a2365964-247e-4ab9-b7af-3a9352b649ee",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
